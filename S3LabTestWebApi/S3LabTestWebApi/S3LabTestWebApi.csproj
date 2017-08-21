@@ -181,6 +181,7 @@
     <Compile Include="Models\LevelDetailsModel.cs" />
     <Compile Include="Models\SylbLanguages.cs" />
     <Compile Include="Models\SyllabusDetailsModel.cs" />
+    <Compile Include="Models\SyllabusMergeModel.cs" />
     <Compile Include="Models\TradeDetailsModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="S3LabTestDb.Context.cs">

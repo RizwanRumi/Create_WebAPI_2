@@ -20,10 +20,20 @@ namespace S3LabTestWebApi.Controllers
 
         [Route("GeTSyllabus")]
         [HttpGet]
-        public IHttpActionResult GetList()
+        public IHttpActionResult GetSyllabusList()
         {
-            int dt = 323423;
-            return Ok(dt);
+            List<SyllabusDetailsModel> sylbList = new List<SyllabusDetailsModel>();
+            sylbList = isyllabusDetails.showSylbList();
+            return Ok(sylbList);
+        }
+
+        [Route("getMergeSyllabus")]
+        [HttpGet]
+        public IHttpActionResult getMergeSyllabus()
+        {
+            List<SyllabusMergeModel> sylbList = new List<SyllabusMergeModel>();
+            sylbList = isyllabusDetails.GetSyllabusList();
+            return Ok(sylbList);
         }
 
         [Route("addSyllabus")]

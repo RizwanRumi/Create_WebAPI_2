@@ -10,6 +10,7 @@ namespace S3LabTestWebApi.IBll
     public interface ISyllabus
     {
         int SaveSyllabus(SyllabusDetailsModel sylb);        
-      //  List<SyllabusDetailsModel> showDetails();
+        List<SyllabusDetailsModel> showSylbList();
+        List<SyllabusMergeModel> GetSyllabusList();
     }
 }

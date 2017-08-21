@@ -60,7 +60,7 @@ namespace S3LabTestWebApi.Infrastructure
             kernel.Bind<ILevel>().To<LevelManager>().InSingletonScope();
             kernel.Bind<ILanguage>().To<LanguageManager>().InSingletonScope();
             kernel.Bind<ISyllabus>().To<SyllabusManager>().InSingletonScope();
-
+           
             return kernel;
         }
     }
