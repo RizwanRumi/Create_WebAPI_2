@@ -10,5 +10,6 @@ namespace S3LabTestWebApi.IBll
     public interface ILanguage
     {
         List<LanguageDetailsModel> GetAllLanguages();
+        bool saveSelectedLang(SylbLanguages slLangId);
     }
 }

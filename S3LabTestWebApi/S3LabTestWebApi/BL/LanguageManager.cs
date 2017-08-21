@@ -35,5 +35,21 @@ namespace S3LabTestWebApi.BL
                 return languageList;
             }
         }
+
+        public bool saveSelectedLang(SylbLanguages langs)
+        {          
+             
+            foreach (var sl in langs.SelectedLangs)
+            {
+                tblSyllabusLanguage lng = new tblSyllabusLanguage();
+                lng.colSyllabusId = langs.SylbId;
+                lng.colLanguageId = sl;
+
+                _dbContext.tblSyllabusLanguages.Add(lng);
+                _dbContext.SaveChanges();
+            }
+
+            return true;
+        }
     }
 }

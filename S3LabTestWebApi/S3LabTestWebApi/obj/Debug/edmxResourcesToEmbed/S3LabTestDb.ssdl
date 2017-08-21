@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="S3LabTestDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblLanguages">
+    <Key>
+      <PropertyRef Name="colLanguageId" />
+    </Key>
+    <Property Name="colLanguageId" Type="int" Nullable="false" />
+    <Property Name="colLanguageName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="colLanguageShortName" Type="varchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblLevels">
+    <Key>
+      <PropertyRef Name="colLevelId" />
+    </Key>
+    <Property Name="colLevelId" Type="int" Nullable="false" />
+    <Property Name="colLevelName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="colLevelShortName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="colLevelDescription" Type="varchar" MaxLength="200" />
+    <Property Name="colTradeId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblSyllabus">
+    <Key>
+      <PropertyRef Name="colSyllabusId" />
+    </Key>
+    <Property Name="colSyllabusId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="colSyllabusName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="colTradeId" Type="int" Nullable="false" />
+    <Property Name="colLevelId" Type="int" Nullable="false" />
+    <Property Name="colSyllabusDocUrl" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="colTestPlanUrl" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="colDevelopmentOfficer" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="colManager" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="colUploadBy" Type="int" Nullable="false" />
+    <Property Name="colUploadDt" Type="datetime" Nullable="false" />
+    <Property Name="colActiveDt" Type="datetime" Nullable="false" />
+    <Property Name="colSt" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblSyllabusLanguages">
+    <Key>
+      <PropertyRef Name="colSyllabusId" />
+      <PropertyRef Name="colLanguageId" />
+    </Key>
+    <Property Name="colSyllabusId" Type="int" Nullable="false" />
+    <Property Name="colLanguageId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblTrades">
+    <Key>
+      <PropertyRef Name="colTradeId" />
+    </Key>
+    <Property Name="colTradeId" Type="int" Nullable="false" />
+    <Property Name="colTradeCode" Type="varchar" MaxLength="50" />
+    <Property Name="colTradeName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="colAbbreviation" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="colSt" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="S3LabTestDBModelStoreContainer">
+    <EntitySet Name="tblLanguages" EntityType="Self.tblLanguages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblLevels" EntityType="Self.tblLevels" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblSyllabus" EntityType="Self.tblSyllabus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblSyllabusLanguages" EntityType="Self.tblSyllabusLanguages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTrades" EntityType="Self.tblTrades" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -40,5 +40,14 @@ namespace S3LabTestWebApi.Controllers
             langList = ilanguageDetails.GetAllLanguages();
             return Ok(langList);
         }
+
+        [Route("addSelectedLang")]
+        [HttpPost]
+        public IHttpActionResult PostSelectedLang(SylbLanguages langslist)
+        {
+            bool result;
+            result = ilanguageDetails.saveSelectedLang(langslist);
+            return Ok(result);
+        }
     }
 }
