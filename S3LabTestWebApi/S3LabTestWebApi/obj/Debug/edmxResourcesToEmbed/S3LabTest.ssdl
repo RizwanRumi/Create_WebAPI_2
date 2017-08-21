@@ -22,7 +22,7 @@
     <Key>
       <PropertyRef Name="colSyllabusId" />
     </Key>
-    <Property Name="colSyllabusId" Type="int" Nullable="false" />
+    <Property Name="colSyllabusId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="colSyllabusName" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="colTradeId" Type="int" Nullable="false" />
     <Property Name="colLevelId" Type="int" Nullable="false" />
