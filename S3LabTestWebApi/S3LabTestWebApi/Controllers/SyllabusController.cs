@@ -18,18 +18,18 @@ namespace S3LabTestWebApi.Controllers
             isyllabusDetails = _isyllabusDetails;
         }
 
-        [Route("GeTSyllabus")]
+        //[Route("getSyllabus")]
+        //[HttpGet]
+        //public IHttpActionResult GetSyllabusList()
+        //{
+        //    List<SyllabusDetailsModel> sylbList = new List<SyllabusDetailsModel>();
+        //    sylbList = isyllabusDetails.showSylbList();
+        //    return Ok(sylbList);
+        //}
+
+        [Route("getSyllabus")]
         [HttpGet]
         public IHttpActionResult GetSyllabusList()
-        {
-            List<SyllabusDetailsModel> sylbList = new List<SyllabusDetailsModel>();
-            sylbList = isyllabusDetails.showSylbList();
-            return Ok(sylbList);
-        }
-
-        [Route("getMergeSyllabus")]
-        [HttpGet]
-        public IHttpActionResult getMergeSyllabus()
         {
             List<SyllabusMergeModel> sylbList = new List<SyllabusMergeModel>();
             sylbList = isyllabusDetails.GetSyllabusList();
