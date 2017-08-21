@@ -12,7 +12,7 @@ namespace S3LabTestWebApi
     using System;
     using System.Collections.Generic;
     
-    public partial class tblSyllabu
+    public partial class tblSyllabus
     {
         public int colSyllabusId { get; set; }
         public string colSyllabusName { get; set; }

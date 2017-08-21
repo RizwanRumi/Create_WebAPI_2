@@ -161,10 +161,12 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="BL\LanguageManager.cs" />
     <Compile Include="BL\LevelManager.cs" />
+    <Compile Include="BL\SyllabusManager.cs" />
     <Compile Include="BL\TradeManager.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LanguageController.cs" />
     <Compile Include="Controllers\LevelController.cs" />
+    <Compile Include="Controllers\SyllabusController.cs" />
     <Compile Include="Controllers\TradeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -172,41 +174,43 @@
     </Compile>
     <Compile Include="IBll\ILanguage.cs" />
     <Compile Include="IBll\ILevel.cs" />
+    <Compile Include="IBll\ISyllabus.cs" />
     <Compile Include="IBll\ITrade.cs" />
     <Compile Include="Infrastructure\NinjectResolver.cs" />
     <Compile Include="Models\LanguageDetailsModel.cs" />
     <Compile Include="Models\LevelDetailsModel.cs" />
+    <Compile Include="Models\SyllabusDetailsModel.cs" />
     <Compile Include="Models\TradeDetailsModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="S3LabTestDb.Context.cs">
+    <Compile Include="S3LabTest.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>S3LabTestDb.Context.tt</DependentUpon>
+      <DependentUpon>S3LabTest.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="S3LabTestDb.cs">
+    <Compile Include="S3LabTest.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>S3LabTestDb.tt</DependentUpon>
+      <DependentUpon>S3LabTest.tt</DependentUpon>
     </Compile>
-    <Compile Include="S3LabTestDb.Designer.cs">
+    <Compile Include="S3LabTest.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>S3LabTestDb.edmx</DependentUpon>
+      <DependentUpon>S3LabTest.edmx</DependentUpon>
     </Compile>
     <Compile Include="tblLanguage.cs">
-      <DependentUpon>S3LabTestDb.tt</DependentUpon>
+      <DependentUpon>S3LabTest.tt</DependentUpon>
     </Compile>
     <Compile Include="tblLevel.cs">
-      <DependentUpon>S3LabTestDb.tt</DependentUpon>
+      <DependentUpon>S3LabTest.tt</DependentUpon>
     </Compile>
-    <Compile Include="tblSyllabu.cs">
-      <DependentUpon>S3LabTestDb.tt</DependentUpon>
+    <Compile Include="tblSyllabus.cs">
+      <DependentUpon>S3LabTest.tt</DependentUpon>
     </Compile>
     <Compile Include="tblSyllabusLanguage.cs">
-      <DependentUpon>S3LabTestDb.tt</DependentUpon>
+      <DependentUpon>S3LabTest.tt</DependentUpon>
     </Compile>
     <Compile Include="tblTrade.cs">
-      <DependentUpon>S3LabTestDb.tt</DependentUpon>
+      <DependentUpon>S3LabTest.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -229,22 +233,22 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <EntityDeploy Include="S3LabTestDb.edmx">
+    <EntityDeploy Include="S3LabTest.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>S3LabTestDb.Designer.cs</LastGenOutput>
+      <LastGenOutput>S3LabTest.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="S3LabTestDb.Context.tt">
+    <Content Include="S3LabTest.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>S3LabTestDb.edmx</DependentUpon>
-      <LastGenOutput>S3LabTestDb.Context.cs</LastGenOutput>
+      <DependentUpon>S3LabTest.edmx</DependentUpon>
+      <LastGenOutput>S3LabTest.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="S3LabTestDb.edmx.diagram">
-      <DependentUpon>S3LabTestDb.edmx</DependentUpon>
+    <Content Include="S3LabTest.edmx.diagram">
+      <DependentUpon>S3LabTest.edmx</DependentUpon>
     </Content>
-    <Content Include="S3LabTestDb.tt">
+    <Content Include="S3LabTest.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>S3LabTestDb.edmx</DependentUpon>
-      <LastGenOutput>S3LabTestDb.cs</LastGenOutput>
+      <DependentUpon>S3LabTest.edmx</DependentUpon>
+      <LastGenOutput>S3LabTest.cs</LastGenOutput>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

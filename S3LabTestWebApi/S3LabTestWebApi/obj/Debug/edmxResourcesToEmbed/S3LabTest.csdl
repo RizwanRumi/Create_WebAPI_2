@@ -18,7 +18,7 @@
     <Property Name="colLevelDescription" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
     <Property Name="colTradeId" Type="Int32" Nullable="false" />
   </EntityType>
-  <EntityType Name="tblSyllabu">
+  <EntityType Name="tblSyllabus">
     <Key>
       <PropertyRef Name="colSyllabusId" />
     </Key>
@@ -56,7 +56,7 @@
   <EntityContainer Name="S3LabTestDBEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="tblLanguages" EntityType="Self.tblLanguage" />
     <EntitySet Name="tblLevels" EntityType="Self.tblLevel" />
-    <EntitySet Name="tblSyllabus" EntityType="Self.tblSyllabu" />
+    <EntitySet Name="tblSyllabus1" EntityType="S3LabTestDBModel.tblSyllabus" />
     <EntitySet Name="tblSyllabusLanguages" EntityType="Self.tblSyllabusLanguage" />
     <EntitySet Name="tblTrades" EntityType="Self.tblTrade" />
   </EntityContainer>

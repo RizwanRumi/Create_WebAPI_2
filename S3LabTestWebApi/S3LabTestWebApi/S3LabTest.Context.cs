@@ -27,7 +27,7 @@ namespace S3LabTestWebApi
     
         public virtual DbSet<tblLanguage> tblLanguages { get; set; }
         public virtual DbSet<tblLevel> tblLevels { get; set; }
-        public virtual DbSet<tblSyllabu> tblSyllabus { get; set; }
+        public virtual DbSet<tblSyllabus> tblSyllabus1 { get; set; }
         public virtual DbSet<tblSyllabusLanguage> tblSyllabusLanguages { get; set; }
         public virtual DbSet<tblTrade> tblTrades { get; set; }
     }

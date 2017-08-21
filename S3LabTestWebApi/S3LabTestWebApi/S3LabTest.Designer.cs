@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'E:\Language & Program\s3innovate\S3LabTest\S3LabTestWebApi\S3LabTestWebApi\S3LabTestDb.edmx'. 
+﻿// T4 code generation is enabled for model 'E:\Language & Program\s3innovate\S3LabTest\Create_WebAPI_2\S3LabTestWebApi\S3LabTestWebApi\S3LabTest.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

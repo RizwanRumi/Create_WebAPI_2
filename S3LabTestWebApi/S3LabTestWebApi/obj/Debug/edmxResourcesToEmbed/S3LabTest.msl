@@ -21,8 +21,8 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="tblSyllabus">
-      <EntityTypeMapping TypeName="S3LabTestDBModel.tblSyllabu">
+    <EntitySetMapping Name="tblSyllabus1">
+      <EntityTypeMapping TypeName="S3LabTestDBModel.tblSyllabus">
         <MappingFragment StoreEntitySet="tblSyllabus">
           <ScalarProperty Name="colSyllabusId" ColumnName="colSyllabusId" />
           <ScalarProperty Name="colSyllabusName" ColumnName="colSyllabusName" />

@@ -4,10 +4,10 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="6812c112deb649249590b16734191ff1" Name="Diagram1">
+      <Diagram DiagramId="0bf79a8bdd024992ab433dde2ae3750f" Name="Diagram1">
         <EntityTypeShape EntityType="S3LabTestDBModel.tblLanguage" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="S3LabTestDBModel.tblLevel" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="S3LabTestDBModel.tblSyllabu" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="S3LabTestDBModel.tblSyllabus" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="S3LabTestDBModel.tblSyllabusLanguage" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="S3LabTestDBModel.tblTrade" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
