@@ -12,5 +12,8 @@ namespace S3LabTestWebApi.IBll
         int SaveSyllabus(SyllabusDetailsModel sylb);        
         List<SyllabusDetailsModel> showSylbList();
         List<SyllabusMergeModel> GetSyllabusList();
+        List<SyllabusMergeModel> GetAllSortedList(int tval, int lval);
+        List<SyllabusMergeModel> GetAllByTradeList(int tval);
+        List<SyllabusMergeModel> GetAllByLevelList(int lval);
     }
 }

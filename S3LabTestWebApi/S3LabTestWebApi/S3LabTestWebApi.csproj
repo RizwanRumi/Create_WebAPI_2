@@ -168,7 +168,6 @@
     <Compile Include="Controllers\LevelController.cs" />
     <Compile Include="Controllers\SyllabusController.cs" />
     <Compile Include="Controllers\TradeController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
