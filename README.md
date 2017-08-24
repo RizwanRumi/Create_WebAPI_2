@@ -1,2 +1,5 @@
-# Create_WebAPI_2
-Dependency_Injection_And_Repository_Pattern
+# S3LabTest Api
+
+Technology: Asp.Net Web Api 2
+Design Pattern:
+DependencyInjection and Repository Pattern
